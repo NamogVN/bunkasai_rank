@@ -1,24 +1,34 @@
 <script>
 
+    import Header from "$lib/header.svelte"
+
 </script>
 
-<main>
-    <div class="flex justify-center-safe p-20 gap-[100px]">
+<Header />
 
-        <div class="rounded-4xl h-100 w-100 border-3 border-gray-300 p-5">
+<main class="bg-gray-50 h-screen w-full pt-20">
+    <div class="lg:flex justify-center md:grid justify-items-stretch md:p-5 sm:p-5 lg:gap-[200px] md:gap-20 sm:gap-20">
 
-            <h1 class="p-2 grid grid-flow-col justify-items-center font-bold text-4xl">総合ランキング</h1>
+        <div class="rounded-4xl lg:h-100 lg:w-100 md:h-100 md:w-100 sm:h-50 sm:w-50 drop-shadow-md bg-white p-5
+                    hover:scale-105 transition-transform duration-300">
 
-            <div class="bg-gray-200 rounded-4xl h-[300px] w-full">
-                
+            <h1 class="grid grid-flow-col justify-items-center text-4xl font-bold pb-3">👑総合ランキング👑</h1>
+
+            <div class=" bg-gray-200 rounded-4xl h-[300px] w-full">
+                <img src="https://placehold.jp/150x150.png" class="rounded-2xl mx-auto"/>
             </div>
             
         </div>
 
-        <div class="rounded-4xl h-100 w-100 border-3 border-gray-300 p-10">
+        <div class="rounded-4xl lg:h-100 lg:w-100 md:h-100 md:w-100 sm:h-50 sm:w-50 drop-shadow-md bg-white p-5
+                    hover:scale-105 transition-transform duration-300">
 
-            
+            <h1 class="grid grid-flow-col justify-items-center text-4xl font-bold pb-3">🥁太鼓ランキング🥁</h1>
 
+            <div class=" bg-gray-200 rounded-4xl h-[300px] w-full">
+                <img src="https://placehold.jp/150x150.png" class="rounded-2xl mx-auto"/>
+            </div>
+                
         </div>
 
     </div>
