@@ -1,14 +1,17 @@
-<script>
+<script lang="ts">
 
     import Header from "$lib/header.svelte"
 
     import { goto } from '$app/navigation';
+    import { fade } from 'svelte/transition';
 
 </script>
 
 <Header />
 
-<main class="bg-gray-50 h-screen w-full pt-20">
+<title>J2A文化祭ランキング</title>
+
+<main class="bg-gray-50 h-screen w-full pt-20" transition:fade={{ duration: 150 }}>
     <div class="lg:flex justify-center md:p-5 sm:p-5 lg:gap-[200px] md:gap-20 sm:gap-20">
 
         <button on:click={() => goto('/Allranking')} class="rounded-4xl lg:h-100 lg:w-100 md:h-100 md:w-100 sm:h-50 sm:w-50 drop-shadow-md bg-white p-5

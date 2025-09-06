@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 
     import { goto } from '$app/navigation';
 
@@ -8,7 +8,7 @@
 
     <a on:click={() => goto('/')} class="absolute left-5 text-2xl">
 
-        <img src="https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=000000" class="h-10 w-10 p-1 bg-white rounded-full hover:bg-gray-300 transition"/>
+        <img src="https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=000000" alt="HomeLogo" class="h-10 w-10 p-1 bg-red-300 rounded-xl hover:bg-red-100 transition"/>
 
     </a>
 
